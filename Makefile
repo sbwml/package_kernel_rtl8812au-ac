@@ -30,7 +30,7 @@ define KernelPackage/rtl8812au-ac
   AUTOLOAD:=$(call AutoProbe,rtl8812au)
 endef
 
-NOSTDINC_FLAGS = \
+NOSTDINC_FLAGS := \
 	-I$(PKG_BUILD_DIR) \
 	-I$(PKG_BUILD_DIR)/include \
 	-I$(STAGING_DIR)/usr/include/mac80211-backport \
